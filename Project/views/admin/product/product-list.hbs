@@ -1,0 +1,414 @@
+<!-- Header Section -->
+<div class="container-fluid mb-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="text-dark mb-1"><i class="fa fa-shopping-bag text-primary mr-2"></i>Product Management</h2>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-light px-3 py-2 rounded">
+                    <li class="breadcrumb-item">
+                        <a href="/admin" class="text-primary"><i class="fa fa-home mr-1"></i>Dashboard</a>
+                    </li>
+                    <li class="breadcrumb-item active">All Products</li>
+                </ol>
+            </nav>
+        </div>
+        <a href="/admin/product/add" class="btn btn-primary btn-lg">
+            <i class="fa fa-plus-circle mr-2"></i>Add New Product
+        </a>
+    </div>
+</div>
+
+<!-- Stats Cards -->
+<div class="row mb-4">
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-primary shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Total Products</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">245</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-shopping-bag fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-success text-uppercase mb-1">In Stock</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">218</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-check-circle fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-warning shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Low Stock</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">15</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-exclamation-triangle fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3 col-md-6 mb-4">
+        <div class="card border-left-danger shadow h-100 py-2">
+            <div class="card-body">
+                <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                        <div class="text-xs font-weight-bold text-danger text-uppercase mb-1">Out of Stock</div>
+                        <div class="h5 mb-0 font-weight-bold text-gray-800">12</div>
+                    </div>
+                    <div class="col-auto">
+                        <i class="fas fa-times-circle fa-2x text-gray-300"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Products Grid -->
+<div class="row">
+    <!-- Product Card 1 -->
+    <div class="col-xl-4 col-lg-6 mb-4">
+        <div class="card product-card shadow-sm border-0 h-100">
+            <div class="position-relative">
+                <img src="/images/product-01.jpg" class="card-img-top" alt="Nike Running Shoes" style="height: 200px; object-fit: cover;">
+                <div class="position-absolute top-0 end-0 m-2">
+                    <span class="badge bg-success">Active</span>
+                </div>
+                <div class="position-absolute top-0 start-0 m-2">
+                    <span class="badge bg-primary">Running</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-dark">Nike Air Zoom Pegasus 39</h5>
+                <p class="card-text text-muted small">Premium running shoes with advanced cushioning technology</p>
+
+                <div class="row text-center mb-3">
+                    <div class="col-6">
+                        <div class="text-primary font-weight-bold">$129.99</div>
+                        <small class="text-muted">Price</small>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-success font-weight-bold">45</div>
+                        <small class="text-muted">In Stock</small>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Nike</small>
+                    <small class="text-muted">2024-01-15</small>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+                <div class="btn-group w-100">
+                    <a href="/admin/product/edit/1" class="btn btn-outline-warning btn-sm">
+                        <i class="fa fa-edit mr-1"></i>Edit
+                    </a>
+                    <button class="btn btn-outline-danger btn-sm">
+                        <i class="fa fa-trash mr-1"></i>Delete
+                    </button>
+                    <button class="btn btn-outline-info btn-sm">
+                        <i class="fa fa-eye mr-1"></i>View
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Card 2 -->
+    <div class="col-xl-4 col-lg-6 mb-4">
+        <div class="card product-card shadow-sm border-0 h-100">
+            <div class="position-relative">
+                <img src="/images/product-02.jpg" class="card-img-top" alt="Basketball Jersey" style="height: 200px; object-fit: cover;">
+                <div class="position-absolute top-0 end-0 m-2">
+                    <span class="badge bg-success">Active</span>
+                </div>
+                <div class="position-absolute top-0 start-0 m-2">
+                    <span class="badge bg-success">Basketball</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-dark">NBA Lakers Icon Edition Jersey</h5>
+                <p class="card-text text-muted small">Official Lakers basketball jersey with authentic design</p>
+
+                <div class="row text-center mb-3">
+                    <div class="col-6">
+                        <div class="text-primary font-weight-bold">$89.99</div>
+                        <small class="text-muted">Price</small>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-success font-weight-bold">32</div>
+                        <small class="text-muted">In Stock</small>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Nike</small>
+                    <small class="text-muted">2024-01-14</small>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+                <div class="btn-group w-100">
+                    <a href="/admin/product/edit/2" class="btn btn-outline-warning btn-sm">
+                        <i class="fa fa-edit mr-1"></i>Edit
+                    </a>
+                    <button class="btn btn-outline-danger btn-sm">
+                        <i class="fa fa-trash mr-1"></i>Delete
+                    </button>
+                    <button class="btn btn-outline-info btn-sm">
+                        <i class="fa fa-eye mr-1"></i>View
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Card 3 -->
+    <div class="col-xl-4 col-lg-6 mb-4">
+        <div class="card product-card shadow-sm border-0 h-100">
+            <div class="position-relative">
+                <img src="/images/product-03.jpg" class="card-img-top" alt="Yoga Pants" style="height: 200px; object-fit: cover;">
+                <div class="position-absolute top-0 end-0 m-2">
+                    <span class="badge bg-success">Active</span>
+                </div>
+                <div class="position-absolute top-0 start-0 m-2">
+                    <span class="badge bg-warning text-dark">Yoga</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-dark">Lululemon Align High-Rise Pant</h5>
+                <p class="card-text text-muted small">High-rise yoga pants with buttery-soft fabric</p>
+
+                <div class="row text-center mb-3">
+                    <div class="col-6">
+                        <div class="text-primary font-weight-bold">$98.00</div>
+                        <small class="text-muted">Price</small>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-warning font-weight-bold">5</div>
+                        <small class="text-muted">Low Stock</small>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Lululemon</small>
+                    <small class="text-muted">2024-01-13</small>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+                <div class="btn-group w-100">
+                    <a href="/admin/product/edit/3" class="btn btn-outline-warning btn-sm">
+                        <i class="fa fa-edit mr-1"></i>Edit
+                    </a>
+                    <button class="btn btn-outline-danger btn-sm">
+                        <i class="fa fa-trash mr-1"></i>Delete
+                    </button>
+                    <button class="btn btn-outline-info btn-sm">
+                        <i class="fa fa-eye mr-1"></i>View
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Card 4 -->
+    <div class="col-xl-4 col-lg-6 mb-4">
+        <div class="card product-card shadow-sm border-0 h-100">
+            <div class="position-relative">
+                <img src="/images/product-04.jpg" class="card-img-top" alt="Training Shoes" style="height: 200px; object-fit: cover;">
+                <div class="position-absolute top-0 end-0 m-2">
+                    <span class="badge bg-success">Active</span>
+                </div>
+                <div class="position-absolute top-0 start-0 m-2">
+                    <span class="badge bg-primary">Running</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-dark">Adidas Ultraboost 22 Running Shoes</h5>
+                <p class="card-text text-muted small">Energy-return running shoes with Boost technology</p>
+
+                <div class="row text-center mb-3">
+                    <div class="col-6">
+                        <div class="text-primary font-weight-bold">$179.99</div>
+                        <small class="text-muted">Price</small>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-success font-weight-bold">26</div>
+                        <small class="text-muted">In Stock</small>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Adidas</small>
+                    <small class="text-muted">2024-01-12</small>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+                <div class="btn-group w-100">
+                    <a href="/admin/product/edit/4" class="btn btn-outline-warning btn-sm">
+                        <i class="fa fa-edit mr-1"></i>Edit
+                    </a>
+                    <button class="btn btn-outline-danger btn-sm">
+                        <i class="fa fa-trash mr-1"></i>Delete
+                    </button>
+                    <button class="btn btn-outline-info btn-sm">
+                        <i class="fa fa-eye mr-1"></i>View
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Card 5 -->
+    <div class="col-xl-4 col-lg-6 mb-4">
+        <div class="card product-card shadow-sm border-0 h-100">
+            <div class="position-relative">
+                <img src="/images/product-05.jpg" class="card-img-top" alt="Fitness Shorts" style="height: 200px; object-fit: cover;">
+                <div class="position-absolute top-0 end-0 m-2">
+                    <span class="badge bg-warning text-dark">Inactive</span>
+                </div>
+                <div class="position-absolute top-0 start-0 m-2">
+                    <span class="badge bg-info">Training</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <h5 class="card-title text-dark">Under Armour HeatGear Armour Shorts</h5>
+                <p class="card-text text-muted small">Lightweight training shorts with moisture-wicking fabric</p>
+
+                <div class="row text-center mb-3">
+                    <div class="col-6">
+                        <div class="text-primary font-weight-bold">$49.99</div>
+                        <small class="text-muted">Price</small>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-danger font-weight-bold">0</div>
+                        <small class="text-muted">Out of Stock</small>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center">
+                    <small class="text-muted">Under Armour</small>
+                    <small class="text-muted">2024-01-11</small>
+                </div>
+            </div>
+            <div class="card-footer bg-transparent border-0">
+                <div class="btn-group w-100">
+                    <a href="/admin/product/edit/5" class="btn btn-outline-warning btn-sm">
+                        <i class="fa fa-edit mr-1"></i>Edit
+                    </a>
+                    <button class="btn btn-outline-danger btn-sm">
+                        <i class="fa fa-trash mr-1"></i>Delete
+                    </button>
+                    <button class="btn btn-outline-info btn-sm">
+                        <i class="fa fa-eye mr-1"></i>View
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add New Product Card -->
+    <div class="col-xl-4 col-lg-6 mb-4">
+        <div class="card border-dashed shadow-sm h-100">
+            <div class="card-body d-flex flex-column justify-content-center align-items-center text-center py-5">
+                <i class="fa fa-plus-circle fa-3x text-muted mb-3"></i>
+                <h5 class="text-muted mb-2">Add New Product</h5>
+                <p class="text-muted mb-3">Create a new product listing</p>
+                <a href="/admin/product/add" class="btn btn-primary">
+                    <i class="fa fa-plus mr-2"></i>Add Product
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick Actions & Filters -->
+<div class="card shadow-sm border-0 mt-4">
+    <div class="card-header bg-light d-flex justify-content-between align-items-center">
+        <h6 class="mb-0 text-dark">Quick Actions & Filters</h6>
+        <div class="btn-group">
+            <button class="btn btn-outline-primary btn-sm">
+                <i class="fa fa-download mr-1"></i>Export
+            </button>
+            <button class="btn btn-outline-success btn-sm">
+                <i class="fa fa-upload mr-1"></i>Import
+            </button>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-3 mb-3">
+                <select class="form-select">
+                    <option selected>All Categories</option>
+                    <option>Running Shoes</option>
+                    <option>Basketball Apparel</option>
+                    <option>Yoga & Pilates</option>
+                    <option>Fitness & Training</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <select class="form-select">
+                    <option selected>All Brands</option>
+                    <option>Nike</option>
+                    <option>Adidas</option>
+                    <option>Lululemon</option>
+                    <option>Under Armour</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <select class="form-select">
+                    <option selected>Stock Status</option>
+                    <option>In Stock</option>
+                    <option>Low Stock</option>
+                    <option>Out of Stock</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-3">
+                <select class="form-select">
+                    <option selected>Product Status</option>
+                    <option>Active</option>
+                    <option>Inactive</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pagination -->
+<nav aria-label="Page navigation" class="mt-4">
+    <ul class="pagination justify-content-center">
+        <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">
+                <i class="fa fa-chevron-left mr-1"></i>Previous
+            </a>
+        </li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+            <a class="page-link" href="#">
+                Next<i class="fa fa-chevron-right ml-1"></i>
+            </a>
+        </li>
+    </ul>
+</nav>
